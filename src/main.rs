@@ -5,6 +5,7 @@ mod kernel;
 mod drivers;
 mod utils;
 mod board;
+mod shell;
 
 // Entry point of the operating system
 fn main() {
@@ -19,9 +20,8 @@ fn main() {
   // Initialize the kernel
   kernel::entry::init();
 
-  // Start the scheduler
-  kernel::scheduler::start();
-
+  // Initialize the shell
+  shell::init();
   // How did we get here? Hang the processor if somehow reached.
   loop {}
 }
