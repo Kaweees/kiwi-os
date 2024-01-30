@@ -1,0 +1,12 @@
+[package]
+name = "kiwi-os"
+version = "0.0.1"
+edition = "2021"
+publish = false
+
+max_width = 80
+tab_spaces = 2
+hard_tabs = false
+
+[build-dependencies]
+nasm = "0.2.1"
